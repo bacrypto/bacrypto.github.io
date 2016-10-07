@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Bay Area Cypto Day</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="../">
+	
+		<link href='assets/img/favicon.ico' rel='icon' type='image/x-icon'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	
+		<link rel="stylesheet" href="assets/css/default.css"/>
+	
+	<script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#site-navbar">
+
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	
+	<div id="pg-wrapper">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 id="site-title"><a href="">Bay Area Cypto Day</a></h1>
+					<h3 class="event-date">May 2, 2016</h3>
+					<h4 class="event-location">Arrillaga Alumni Center (Stanford University)</h4>
+				</div>
+			</div>
+			<div class="event-container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Program</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table">
+							
+								<tr class="title-row">
+									<td width="10%">09:30&ndash;09:40</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Welcome</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">09:40&ndash;10:10</td>
+									<td width="15%">
+										
+											<a href="http://cs-people.bu.edu/omer/" target="_blank">Omer Paneth</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Delegating RAM Computations</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>In the setting of cloud computing a user wishes to delegate its data, as well as computations over this data, to a cloud provider. Each computation may read and modify the data, and these modifications should persist between computations. Minding the computational resources of the cloud, delegated computations are modeled as RAM programs. In particular, the delegated computations’ running time may be sub-linear, or even exponentially smaller than the memory size.</p>
+<p>We construct a two-message protocol for delegating RAM computations to an untrusted cloud. In our protocol, the user saves a short digest of the delegated data. For every delegated computation, the cloud returns, in addition to the computation’s output, the digest of the modified data, and a proof that the output and digest were computed correctly. When delegating a T-time RAM computation M with security parameter k, the cloud runs in time T * Poly(k) and the user in time Poly(|M|, log(T), k).</p>
+<p>Our protocol is secure assuming super-polynomial hardness of the Learning with Error (LWE) assumption. Security holds even when the delegated computations are chosen adaptively as a function of the data and output of previous computations.</p>
+<p>We note that RAM delegation schemes are an improved variant of memory delegation schemes [Chung et al. CRYPTO 2011]. In memory delegation, computations are modeled as Turing machines, and therefore, the cloud’s work always grows with the size of the delegated data.</p>
+<p>Joint work with Yael Tauman Kalai.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">10:10&ndash;10:40</td>
+									<td width="15%">
+										
+											<a href="http://www.ccs.neu.edu/home/wichs/" target="_blank">Daniel Wichs</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Multi-Key/Spooky Homomorphic Encryption and 2-round MPC</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Fully homomorphic encryption (FHE) schemes allow arbitrary computation on data encrypted under a single key. In this work we are interested in computing over data encrypted under different keys.  In particular, we consider a setting where several inputs x_i are encrypted under different keys pk_i resulting in ciphertexts c_i and we are interested in performing a joint computation f(x_1,…,x_n) over all inputs. We consider two related scenarios:</p>
+<p>–  In a &quot;multi-key&quot; FHE, the goal is to perform a homomorphic computation that results in a single ciphertext c<em> encrypting f(x_1,…,x_n). Furthermore, it should be possible to decrypt c</em> efficiently given all the secret keys.  </p>
+<p>– In a “spooky” FHE, the goal is to perform a homomorphic computation that results in ciphertexts c’_i  which are then individually decrypted under the respective secret keys sk_i  yielding outputs y_i for i = 1,...,n.  By the security of the encryption, we know that each y_i individually cannot “signal” any information about x_j  for j not equal to i. However, analogously to &quot;spooky action at a distance&quot; in quantum mechanics, we show that it&#39;s possible to ensure spooky relationships between the inputs {x_i} and the outputs {y_i}. In particular, for any function f, we can ensure that the y_i are an additive secret sharing of f(x_1,…,x_n). </p>
+<p>We show how to construct multi-key and spooky FHE from the learning with errors (LWE) assumption. We also discuss applications of these notions. Most importantly, we show how to use multi-key and spooky FHE to realize multi-party computation (MPC) with the optimal 2-rounds of interaction.</p>
+<p>Based on joint works with Pratyay Mukherjee, Yevgeniy Dodis, Shai Halevi and Ron Rothblum.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">10:40&ndash;11:10</td>
+									<td width="15%">
+										
+											<a href="https://www.henrycg.com/" target="_blank">Henry Corrigan-Gibbs</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Password Hashing, Space-Hardness, and the Balloon Functions</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>In this talk, I will introduce the problem of password hashing and will explain the reasons to prefer space-hard password hashing functions over conventional cryptographic hashes. Next, I will present the design and analysis of the Balloon hash functions, a new family of space-hard hash functions that require a certain amount working space to compute efficiently, avoid certain important side-channel attacks, and are fast enough for real-world use.</p>
+<p>Finally, I will discuss recent results on space-hard hashing in the parallel setting and related open problems.</p>
+<p>Joint work with Dan Boneh and Stuart Schechter.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:10&ndash;11:20</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:30&ndash;12:30</td>
+									<td width="15%">
+										
+											<a href="http://web.cs.ucla.edu/~rafail/" target="_blank">Rafail Ostrovsky</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Keynote: Adaptively secure garbled circuits from AES</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>A garbling scheme (also known as a randomized encoding) maps a circuit C to C&#39; and maps any input x (for C) to x&#39; such that C&#39;(x&#39;)=C(x), yet C’ and x&#39; jointly reveal nothing about x except the output C(x). In many settings, the circuit C can first be garbled off-line to C&#39; (and given to a cloud) and later any input x can be efficiently garbled to x&#39;, with much lower online complexity of garbling x to x’ compared to evaluating the circuit. This can be used to delegate arbitrary computation to the cloud without revealing user’s private inputs (based solely on AES).</p>
+<p>Yao&#39;s garbling scheme has small online complexity, but only achieves selective security, where the adversary must choose the input x prior to seeing the garbled circuit. Achieving adaptive security, where the adversary can choose x after seeing the garbled circuit, has remained an open problem since the 1980’s.</p>
+<p>In this talk, I will explain how Yao’s scheme works and how to modify it in a way that allows us to prove adaptive security, assuming the existence of any one-way function (such as Intel’s® AES). Specifically, I will present a scheme where the online complexity is proportional to the width of the circuit and is independent of the circuit&#39;s depth. More broadly, I will relate the online complexity of adaptively secure garbling schemes to a certain type of pebble-complexity of the circuit graph.</p>
+<p>Joint work with Brett Hemenway, Zahra Jafargholi , Alessandra Scafuro and Daniel Wichs.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">12:30&ndash;14:00</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Lunch (provided)</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:00&ndash;14:30</td>
+									<td width="15%">
+										
+											<a href="https://omereingold.wordpress.com/" target="_blank">Omer Reingold</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Constant-round Interactive-proofs for Delegating Computation</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Interactive proofs, introduced by Goldwasser, Micali and Rackoff, have had a dramatic impact on Complexity Theory and Cryptography. In particular, the celebrated IP=PSPACE Theorem [LFKN92,Shamir92] allows an all-powerful but untrusted prover to convince a polynomial-time verifier of the validity of extremely complicated statements (as long as they can be evaluated using polynomial space). The interactive proof system designed for this purpose requires a large number of communication rounds and heavy computation for generating the proof.</p>
+<p>We introduce new interactive proofs that are very efficient in the number of rounds and computation time, that are particularly well suited for delegating bounded-space computations (e.g., in the context of cloud computing). Our main result is that for every statement that can be evaluated in polynomial time and bounded-polynomial space there exists an interactive proof that satisfies the following strict efficiency requirements:</p>
+<p>(1) the honest prover runs in polynomial time, 
+(2) the verifier is almost linear time (and under some conditions even sub linear), and 
+(3) the interaction consists of only a constant number of communication rounds.  </p>
+<p>Prior to this work, very little was known about the power of efficient, constant-round interactive proofs.</p>
+<p>Joint work with Guy Rothblum and Ron Rothblum.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:30&ndash;15:00</td>
+									<td width="15%">
+										
+											<a href="https://research.yahoo.com/researchers/garay" target="_blank">Juan Garay</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Probabilistic Termination and Composability of Cryptographic Protocols</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>When analyzing the round complexity of multi-party cryptographic protocols, one often overlooks the fact that underlying resources, such as a broadcast channel, can be by themselves expensive to implement. For example, it is well known that it is impossible to implement a broadcast channel by a (deterministic) protocol in a sub-linear (in the number of corrupted parties) number of rounds.</p>
+<p>The seminal works of Rabin and Ben-Or from the early 80&#39;s demonstrated that limitations as the above can be overcome by using randomization and allowing parties to terminate at different rounds, igniting the study of protocols over point-to-point channels with probabilistic termination and expected constant round complexity. However, absent a rigorous simulation-based definition, the suggested protocols are  proven secure in a property-based manner or via ad hoc simulation-based frameworks, therefore guaranteeing limited, if any, composability.</p>
+<p>In this work, we put forth the first simulation-based treatment of multi-party cryptographic protocols with probabilistic termination. We define secure multi-party computation (MPC) with probabilistic termination in the UC framework, and prove a universal composition theorem for probabilistic-termination protocols. Our theorem allows to compile a protocol using deterministic-termination hybrids into a protocol that uses expected constant-round protocols for emulating these hybrids, preserving the expected round complexity of the calling protocol. </p>
+<p>We showcase our definitions and compiler by providing simulation-based (therefore composable) protocols and security proofs for the following primitives relying on point-to-point channels: (1) Expected-constant-round perfect Byzantine agreement, (2) expected-constant-round perfect parallel broadcast, and (3) perfectly secure MPC with round complexity independent of the number of parties.</p>
+<p>This is joint work with Ran Cohen, Sandro Coretti and Vassilis Zikas.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:00&ndash;15:30</td>
+									<td width="15%">
+										
+											Akshay Srinivasan
+									 	
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Breaking the Sub-Exponential Barrier in Obfustopia</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Indistinguishability obfuscation (iO) has emerged as a surprisingly powerful notion. Almost all known cryptographic primitives can be constructed from general purpose iO and other minimalistic assumptions such as one-way functions. The primary challenge in this direction of research is to develop novel techniques for using iO since iO by itself offers virtually no protection to secret information in the underlying programs. When dealing with complex situations, often these techniques have to consider an exponential number of hybrids (usually one per input) in the security proof. This results in a sub-exponential loss in the security reduction. Unfortunately, this scenario is becoming more and more common and appears to be a fundamental barrier to current techniques.</p>
+<p>In this work, we explore the possibility of getting around this sub-exponential loss barrier in constructions based on iO as well as the weaker notion of functional encryption (FE). Towards this goal, we achieve the following results:</p>
+<ol>
+<li>We base hardness of the complexity class PPAD on polynomially hard iO. We also base hardness of the class PPAD on a strictly weaker primitive namely polynomially hard FE.</li>
+<li>We construct trapdoor permutations from poly hard iO and present a different construction based on a weaker poly hard FE.</li>
+<li>We present a construction of Non-Interactive Key Exchange (NIKE) from poly hard FE.</li>
+</ol>
+<p>In this talk, I will outline the main techniques used in the above constructions. Based on joint works with Sanjam Garg, Omkant Pandey and Mark Zhandry.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:30&ndash;16:00</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">16:00&ndash;16:30</td>
+									<td width="15%">
+										
+											<a href="https://people.eecs.berkeley.edu/~pratyay85/" target="_blank">Pratyay Mukherjee</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Obfuscation without the Vulnerabilities of Multilinear Maps</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Indistinguishability obfuscation is a central primitive in cryptography. However, the security aspects of  the existing multilinear maps constructions on which current obfuscation candidates are based is poorly understood. In a few words, multilinear maps allow for checking if an arbitrary bounded degree polynomial on hidden values evaluates to zero or not. All known attacks on multilinear maps depend on the information revealed on computations that result in encodings of zero. This includes the recent annihilation attacks of Miles, Sahai and Zhandry [EPRINT 2016/147] on obfuscation candidates as a special case.</p>
+<p>Building on a modification of the Garg, Gentry and Halevi [EUROCRYPT 2013] multilinear maps (GGH for short), we present a new obfuscation candidate that is resilient to these vulnerabilities. Specifically, in our construction the results of all computations yielding a zero &quot;provably&quot; hide all the secret system parameters. This is the first obfuscation candidate that weakens the security needed from the &quot;zero-test&quot;.</p>
+<p>Formally, we prove (VBB) security of our construction in a weakening of the idealized graded encoding model that accounts for &#39;&#39;all known&#39;&#39; vulnerabilities on GGH maps.</p>
+<p>Joint work with Sanjam Garg and Akshayaram Srinivasan (both UC Berkeley).</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">16:30&ndash;17:00</td>
+									<td width="15%">
+										
+											<a href="https://sites.google.com/site/valerianikolaenko/" target="_blank">Valeria Nikolaenko</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Practical, Quantum-Secure Key Exchange for TLS from LWE</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Lattice-based cryptography offers the most attractive primitives believed to be resistant to quantum computers. Recently, following increasing interests by both private companies and government agencies in building practical quantum computers, Bos, Costello, Naehrig, and Stebila (IEEE S&amp;P 2015) showed a practical post-quantum key exchange protocol based on hard problems on ideal lattices. In this paper, we develop and evaluate a secure and practical key exchange protocol based on hard problems on generic lattices (Learning With Errors). We initiate this study noting that the hardness of lattice problems on regular and ideal lattices merits further cryptanalysis and recently there have been significant strides in attacking some weak problem instances over ideal lattices as well as improved attacks on lattices.</p>
+<p>We demonstrate the feasibility of LWE-based key exchange for internet deployment; in the process of which we introduce techniques to optimize communication bandwidth in lattice protocols that may be of independent interest. Our microbenchmark evaluations of our schemes are promising—requiring about 2.4x compute and about 2x bandwidth overhead to move from ideal to generic lattices and we mention practical research directions going forward.</p>
+<p>This is joint work with Joppe Bos, Craig Costello, Leo Ducas, Ilya Mironov, Michael Naehrig, Ananth Raghunathan, and Douglas Stebila.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+
+						</table>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Additional Information</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p>
+							<p><strong>Location:</strong>
+<a href="https://alumni.stanford.edu/get/page/resources/alumnicenter/directions">Arillaga Alumni Center</a>, Stanford University.</p>
+<p><strong>Parking information:</strong>
+Parking is available at the Galvez lot across the street. Use code 2184 at the parking meters.</p>
+<p><strong>Contact:</strong>
+Ruth Harris (<code>rharris3@cs.stanford.edu</code>).</p>
+
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					<br>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+	</div>
+	<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/bootstrap.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/app.js"></script>
+	<script>
+		$(function() {
+			$("a.show-abstract").on("click", function(e) {
+				e.preventDefault();
+				var markupRow = $(this).closest("tr").next("tr.abstract-row");
+				markupRow.toggle({
+					easing: "swing"
+				});
+			});
+		});
+	</script>
+</body>
+</html>
+
