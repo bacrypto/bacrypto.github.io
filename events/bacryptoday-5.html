@@ -41,15 +41,331 @@
 			</div>
 			<div class="event-container">
 			
+		        <div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Program</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table">
+							
+								<tr class="title-row">
+									<td width="10%">10:00&ndash;10:30</td>
+									<td width="15%">
+										
+											<a href="https://www.cs.rochester.edu/u/muthuv/" target="_blank">Muthuramakrishnan Venkitasubramaniam</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Ligero: Lightweight Sublinear Arguments Without a Trusted Setup</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>We design and implement a simple zero-knowledge argument protocol for NP whose communication complexity is proportional to the square-root of the verification circuit size. The protocol can be based on any collision-resistant hash function. Alternatively, it can be made non-interactive in the random oracle model, yielding concretely efficient zk-SNARKs that do not require a trusted setup or public-key cryptography.</p>
+<p>Our protocol is attractive not only for very large verification circuits but also for moderately large circuits (Boolean or Arithmetic) that arise in applications. For instance, for verifying a SHA-256 preimage in zero-knowledge with 2^{-40} soundness error, the communication complexity is roughly 44KB (or less than 34KB under a plausible conjecture), the prover running time is 140 ms, and the verifier running time is 62 ms. This proof is roughly 4 times shorter than a similar proof of ZKB++ (Chase et al., CCS 2017), an optimized variant of ZKBoo (Giacomelli et al., USENIX 2016).</p>
+<p>The communication complexity of our protocol is independent of the circuit structure and depends only on the number of gates. For $2^{-40}$ soundness error, the communication becomes smaller than the circuit size for circuits containing roughly 3 million gates or more. Our efficiency advantages become even bigger in an amortized setting, where several instances need to be proven simultaneously.</p>
+<p>Our zero-knowledge protocol is obtained by applying an optimized version of the general transformation of Ishai et al. (STOC 2007) to a variant of the protocol for secure multiparty computation of Damgård and Ishai (Crypto 2006). It can be viewed as a simple zero-knowledge interactive PCP based on ``interleaved&#39;&#39; Reed-Solomon codes.</p>
+<p>Joint work with Scott Ames, Carmit Hazay and Yuval Ishai.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">10:30&ndash;11:00</td>
+									<td width="15%">
+										
+											Dima Kogan
+									 	
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">The discrete-logarithm problem with preprocessing</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>We study discrete-log algorithms that use preprocessing. In our model, an
+adversary may use a very large amount of precomputation to produce an &quot;advice&quot;
+string about a specific group (e.g., NIST P-256). In a subsequent online phase,
+the adversary&#39;s task is to use the preprocessed advice to quickly compute
+discrete logarithms in the group. Motivated by surprising recent preprocessing
+attacks on the discrete-log problem, we study the power and limits of such
+algorithms.</p>
+<p>In particular, we focus on generic algorithms that operate in every cyclic
+group. We show a lower bound on the success probability of any generic discrete-log algorithm with preprocessing. Our lower bound, which is tight up to logarithmic
+factors, uses a synthesis of incompressibility techniques and classic methods
+for generic-group lower bounds. We apply our techniques to prove related lower
+bounds for the CDH, DDH, and multiple-discrete-log problems.</p>
+<p>Finally, we demonstrate two new generic preprocessing attacks: one for the
+multiple-discrete-log problem and one for certain decisional-type problems in
+groups. This latter result demonstrates that, for generic algorithms with
+preprocessing, distinguishing tuples of the form [g, g^x, g^(x^2)] from random
+is much easier than the discrete-log problem. </p>
+<p>This is joint work with Henry Corrigan-Gibbs.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:00&ndash;11:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:30&ndash;12:30</td>
+									<td width="15%">
+										
+											<a href="http://web.cs.ucla.edu/~sahai/" target="_blank">Amit Sahai</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">TBA (Keynote)</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>TBA</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">12:30&ndash;13:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Lunch (on your own)</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">13:30&ndash;14:00</td>
+									<td width="15%">
+										
+											<a href="https://scholar.google.com/citations?user=4t2RKBUAAAAJ" target="_blank">Akshayaram Srinivasan</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Two-round secure multiparty computation from minimal assumptions</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>We give a construction of two-round secure multiparty computation based on the minimal assumption that two-round oblivious transfer exists.</p>
+<p>Based on joint work with Sanjam Garg.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:00&ndash;14:30</td>
+									<td width="15%">
+										
+											<a href="https://people.eecs.berkeley.edu/~mdhajiabadi/" target="_blank">Mohammad Hajiabadi</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Can public-key encryption be based on one-way functions via non-blackbox garbling techniques?</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Understanding whether public-key encryption can be based on one-way functions is a fundamental open problem in cryptography. The seminal work of Impagliazzo and Rudich (STOC 87) showed that black-box constructions of public-key encryption from one-way functions are impossible. However, this impossibility result leaves open the possibility of using non-black-box techniques for achieving this goal. </p>
+<p>One of the most useful class of non-black-box techniques in cryptography are garbling techniques (Yao FOCS&#39;86).
+We investigate whether we can use one-way functions and garbling schemes together to get public-key encryption.
+In fact, the recent work of D\&quot;ottling and Garg (CRYPTO&#39;17) follows a similar recipe for bypassing known black-box impossibility results for obtaining identity-based encryption. </p>
+<p>We prove that similar non-black-box uses of one-way functions together with garbling  are  still insufficient for realizing public-key encryption. In particular, we prove our impossibility result in a model introduced by Brakerski, Katz, Segev, and Yerukhimovich (TCC&#39;11) and Asharov and Segev (FOCS&#39;15) tailored to garbling schemes. Namely, we show that black-box use of garbling of circuits that have one-way function (or even random oracle) gates in them is insufficient for obtaining public-key encryption.</p>
+<p>Joint work with Sanjam Garg, Mohammad Mahmoody and Ameer Mohammed.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:30&ndash;15:00</td>
+									<td width="15%">
+										
+											<a href="http://www.arijuels.com/" target="_blank">Ari Juels</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Enter the Hydra: Towards Principled Bug Bounties and Exploit-Resistant Smart Contracts</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Vulnerability reward programs, a.k.a. bug bounties, are a near-universal component of major software security programs. Today, though, such programs have three major deficiencies. They fail to provide strong technical (or other) assurances of fair payment for reported bugs, lack rigorous principles for setting bounty amounts, and can only effectively incentivize economically rational hackers to disclose bugs by offering rich bounties. As a result, rather than reporting bugs, hackers often choose to sell or weaponize them.
+We offer a novel, principled approach to administering and reasoning about bug bounties that cost-effectively boosts incentives for hackers to report bugs. Our key idea is a concept that we call an <em>exploit gap</em>. This is a transformation of program code that prevents a serious bug from being exploited as a security-critical vulnerability. We focus on a broadly applicable realization through a variant of the classic idea of N-version programming. We call the result a <em>hydra program</em>.
+As our main target application, we explore <em>smart contracts</em>, programs that execute on blockchains. Because smart contracts are often financial instruments, they offer a springboard for our rigorous framework to reason about bounty price setting. By modeling an economically rational hacker&#39;s bug-exploitation, we show how hydra contracts greatly amplify the power of bounties to financially incentivize disclosure. We also show how smart contracts can separately enforce <em>fairness</em> for bug bounties, guaranteeing payment for correctly reported bugs.
+We present a survey of well-known exploits to-date against Ethereum smart contracts, showing that multi-language hydra programming would have abated most of them. We also report on implementation of hydra Ethereum contracts.</p>
+<p>Joint work with Lorenz Breidenbach, Phil Daian, and Florian Tramèr.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:00&ndash;15:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:30&ndash;16:00</td>
+									<td width="15%">
+										
+											<a href="https://crypto.stanford.edu/~dwu4/" target="_blank">David Wu</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Quasi-Optimal SNARGs via Linear Multi-Prover Interactive Proofs</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Succinct non-interactive arguments (SNARGs) enable verifying NP computations with significantly less complexity than that required for classical NP verification. In this work, we focus on simultaneously minimizing the proof size and the prover complexity of SNARGs. Concretely, for a security parameter k, we measure the asymptotic cost of achieving soundness error 2^{-k} against provers of size 2^k. We say a SNARG is quasi-optimally succinct if its proof length is quasilinear in the security parameter, and that it is quasi-optimal, if moreover, its prover complexity is only poly-logarithmically greater than the running time of the classical NP prover. These bounds are the best we could hope for assuming that NP does not have succinct proofs.</p>
+<p>In this work, we give the first quasi-optimal SNARG for Boolean circuit satisfiability from a concrete cryptographic assumption. Our construction takes a two-step approach. The first is an information-theoretic construction of a quasi-optimal linear multi-prover interactive proof (linear MIP) for circuit satisfiability. Then, we describe a generic cryptographic compiler that transforms our quasi-optimal linear MIP into a quasi-optimal SNARG by relying on the notion of linear-only vector encryption over rings introduced by Boneh et al. (Eurocrypt 2017). Combining these two primitives yields the first quasi-optimal SNARG based on linear-only vector encryption.</p>
+<p>Joint work with Dan Boneh, Yuval Ishai, and Amit Sahai.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">16:00&ndash;16:30</td>
+									<td width="15%">
+										
+											<a href="https://www.cs.virginia.edu/~mohammad/" target="_blank">Mohammad Mahmoody</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Blockwise p-Tampering Attacks on Cryptographic Primitives, Extractors, and Learners</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Austrin, Chung, Mahmoody, Pass and Seth (Crypto&#39;14)  introduced the notion of bitwise p-tampering attacks over randomized algorithms in which an efficient `virus&#39; gets to control  each bit of the randomness with independent probability p in an online way, and they showed how to break the security of privacy-based cryptographic primitives through bitwise p-tampering attacks.</p>
+<p>In this work, we revisit and extend the bitwise tampering model of Austrin et al. to the blockwise setting where each incoming block of randomness becomes tamperable  with independent probability p.  Our main result is an efficient blockwise p-tampering attack to bias  the average of any efficient function f mapping arbitrary distribution X to [-1,+1] by \Omega(p Var[f(X)]), where Var[f(X)] is the variance of f(X), regardless of how X is partitioned into individually tamperable blocks X=(X_1,...,X_n). Further, relying on the blockwise nature of our biasing attack, we show how to bias the output of any seedless multi-source extractors if each source becomes tamperable with independent probability p. Finally we show how to increase the classification error of deterministic learners in the so called `poisoning&#39; attack model under Valiant&#39;s adversarial noise where the adversary gets to tamper with each training example with independent probability p. </p>
+<p>Joint work with: Saeed Mahloujifar.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+
+						</table>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Additional Information</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<p>
-						<p>Information about the program will be published soon.</p>
+							<p><strong>Location:</strong>
+306 <a href="http://http.cs.berkeley.edu/Directions/">Soda Hall</a>, UC Berkeley.</p>
+<p><strong>Parking information:</strong>
+Paid visitor parking is available in several parking lots on campus; see <a href="http://pt.berkeley.edu/parking/visitor/lots">here</a> for details. Among these lots, Lower Hearst Garage, Level 2, and Stadium Parking Structure are closest to Soda Hall.</p>
 
 						</p>
 					</div>
-			    </div>
-		    
+				</div>
+				
 				<div class="row">
 					<div class="col-md-12">
 					<br>
