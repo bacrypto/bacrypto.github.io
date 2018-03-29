@@ -41,15 +41,336 @@
 			</div>
 			<div class="event-container">
 			
+		        <div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Program</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table">
+							
+								<tr class="title-row">
+									<td width="10%">10:00&ndash;10:30</td>
+									<td width="15%">
+										
+											<a href="http://web.cs.ucla.edu/~dakshita/" target="_blank">Dakshita Khurana</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Statistical WI (and more) in Two Messages</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>In this talk, I will present techniques that use two-message oblivious transfer (OT) to construct two-message arguments with strong privacy guarantees. Specifically, assuming quasi-polynomial security of OT, we construct two-message arguments that are witness indistinguishable, and in the delayed-input setting, are also strong witness indistinguishable and witness hiding. We also show how to achieve (similar) <em>statistical</em> privacy guarantees, which were previously not known to be achievable in protocols requiring two messages.</p>
+<p>This is based on joint works with Abhishek Jain, Yael Kalai, Ron Rothblum and Amit Sahai.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">10:30&ndash;11:00</td>
+									<td width="15%">
+										
+											<a href="http://people.eecs.berkeley.edu/~pratyushmishra/" target="_blank">Pratyush Mishra</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Oblix: An Efficient Oblivious Search Index</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>In this talk we present <strong>Oblix</strong>, a search index for encrypted data that is <em>oblivious</em> (provably hides access patterns), is <em>dynamic</em> (supports inserts and deletes), and has good <em>efficiency</em> (operations take only a few milliseconds).</p>
+<p>To achieve these properties, Oblix uses novel oblivious-access techniques inside remote hardware enclaves (e.g., Intel SGX). In particular, since these enclaves leak memory access patterns, we design and implement <em>doubly</em>-oblivious data structures, which hide access patterns to both external (server) memory, and to the (enclaved) client&#39;s internal memory.</p>
+<p>We demonstrate the usefulness of Oblix in several applications: private contact discovery for Signal, private retrieval of public keys for Key Transparency, and searchable encryption that hides access patterns and result sizes.</p>
+<p>This is joint work with Rishabh Poddar, Jerry Chen, Alessandro Chiesa, and Raluca Ada Popa.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:00&ndash;11:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">11:30&ndash;12:30</td>
+									<td width="15%">
+										
+											<a href="https://www.microsoft.com/en-us/research/people/yael/" target="_blank">Yael Kalai</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">A Unified Approach for Delegating Computations Under Standard Assumptions (Keynote)</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>In the past few years there have been several new constructions of one-round delegation schemes based on standard assumptions (such as the Learning with Error assumption).  We have seen such constructions for all deterministic computations, for batch NP computations, for NTISP computations, and more.  In this talk, I will survey these results with a single unifying approach.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">12:30&ndash;13:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Lunch</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">13:30&ndash;14:00</td>
+									<td width="15%">
+										
+											<a href="https://crypto.stanford.edu/~buenz/" target="_blank">Benedikt Buenz</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Bulletproofs: Short Proofs for Confidential Transactions and More</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>This talk will describe Bulletproofs, a new non-interactive zero-knowledge proof protocol with very short proofs and without a trusted setup; the proof size is only logarithmic in the witness size. Bulletproofs are especially well suited for efficient range proofs on committed values: they enable proving that a committed value is in a range using only 2log2(n)+9log2⁡(n)+9 group and field elements, where n is the bit length of the range. Proof generation and verification times are linear in n.  Moreover, Bulletproofs supports aggregation of range proofs, so that a party can prove that m commitments lie in a given range by providing only an additive O(log(m)) group elements over the length of a single proof. We show that verification time, while asymptotically linear, is very efficient in practice. Moreover, the verification of multiple Bulletproofs can be batched for further speed-up. 
+Bulletproofs build on the techniques of Bootle et al. (EUROCRYPT 2016). Beyond range proofs, Bulletproofs provide short zero-knowledge proofs for general arithmetic circuits while only relying on the discrete logarithm assumption and without requiring a trusted setup. The efficiency of Bulletproofs is particularly well suited for the distributed and trustless nature of blockchains.</p>
+<p>This work is joint with Jonathan Bootle, Dan Boneh, Andrew Poelstra, Pieter Wuille, Greg Maxwell.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:00&ndash;14:30</td>
+									<td width="15%">
+										
+											<a href="https://shelat.ccs.neu.edu/" target="_blank">abhi shelat</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Hyrax vs Ligero vs STARK vs Bullets</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>I will first present Hyrax, [Wahby, Tzialla, shelat, Thaler, Walfish’ 2018], a zero-knowledge argument for NP with low communication complexity, low concrete cost for both the prover and the verifier, and no trusted setup, based on standard cryptographic assumptions (DDH) and the random oracle model. Specifically, communication is <em>sublinear</em> in the size of the witness plus $d⋅log(G)$ where $d$ is the depth and $G$ is the width of the verifying circuit. When applied to batched or data-parallel statements, the prover’s cost is linear and the verifier’s cost is sub-linear in the verifying circuit size, both with good constants. Together, these properties represent a new point in the tradeoffs among setup, complexity assumptions, proof size, and computational cost. We evaluate Hyrax on three benchmarks, SHA-256 Merkle trees, image transformation, and matrix multiplication and show scalability and smaller proof sizes versus prior work.</p>
+<p>Recently, there are 3 other interesting zero-knowledge argument systems with sublinear proof sizes: Ligero, STARKs, and bulletproofs.  I will present comparisons between these 4 systems and share brisk commentary on how these ideas may lead to even better schemes.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">14:30&ndash;15:00</td>
+									<td width="15%">
+										
+											<a href="https://crypto.stanford.edu/~dwu4/" target="_blank">David Wu</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Multi-Theorem Preprocessing NIZKs from Lattices</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Non-interactive zero-knowledge (NIZK) proofs are fundamental to modern cryptography. Numerous NIZK constructions are known in both the random oracle and the common reference string (CRS) models. In the CRS model, there exist constructions from several classes of cryptographic assumptions such as trapdoor permutations, pairings, and indistinguishability obfuscation. Notably absent from this list are constructions from standard lattice assumptions. While there has been partial progress in realizing NIZKs from lattices for specific languages, constructing NIZK proofs (and arguments) for all of NP from standard lattice assumptions remains open.</p>
+<p>In this work, we make progress on this problem by giving the first construction of a multi-theorem NIZK argument for NP from standard lattice assumptions in the preprocessing model, where a (trusted) setup algorithm generates a proving and a verification key. In the multi-theorem setting, the proving and verification keys should be reusable for an unbounded number of theorems without compromising soundness or zero-knowledge. Existing constructions of preprocessing NIZKs that rely on weaker assumptions like one-way functions or oblivious transfer are only secure in a single-theorem setting. Thus, constructing multi-theorem NIZKs in the preprocessing model does not seem to be inherently easier than constructing them in the CRS model.</p>
+<p>In this talk, I will first show how we can construct a multi-theorem preprocessing NIZK from context-hiding homomorphic signatures (based on LWE). Then, I show how to efficiently implement the preprocessing step using a new cryptographic primitive called blind homomorphic signatures. Finally, I will show how our lattice-based preprocessing NIZKs can be used to obtain new malicious-secure MPC protocols from standard lattice assumptions.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:00&ndash;15:30</td>
+									<td width="15%">
+										
+											
+									 	
+									</td>
+									<td>
+										
+											<b>Break</b>
+									 	
+									</td>
+								</tr>
+							
+								<tr class="title-row">
+									<td width="10%">15:30&ndash;16:00</td>
+									<td width="15%">
+										
+											<a href="https://people.eecs.berkeley.edu/~peihan/" target="_blank">Peihan Miao</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Two-Round Multiparty Secure Computation Minimizing Public Key Operations</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>We show new constructions of semi-honest and malicious two-round multiparty secure computation protocols using only (a fixed) poly(n,k) invocations of a two-round oblivious transfer protocol (which use expensive public-key operations) and poly(k, |C|) cheaper one-way function calls, where k is the security parameter, n is the number of parties, and C is the circuit being computed. All previously known two-round multiparty secure computation protocols required poly(k,|C|) expensive public-key operations. </p>
+<p>Based on joint work with Sanjam Garg and Akshayaram Srinivasan.</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">16:00&ndash;16:30</td>
+									<td width="15%">
+										
+											<a href="https://pratyaymukherjee.com/" target="_blank">Pratyay Mukherjee</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Threshold Authenticated Encryption</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>Threshold cryptography provides a mechanism for protecting secret keys by sharing them among multiple parties, who then jointly perform a cryptographic task. An attacker who actively corrupts up to a threshold number of parties, however, is unable to recover the secret nor violate security of the cryptographic task. There are many real world applications, ranging from key-management in servers to distributed authentication in cryptocurrencies where threshold primitives can be/have been extremely useful. Prior works in this space have mainly focused on definitions and constructions for public-key cryptography and digital signatures, and fail to capture the security concerns and efficiency challenges of symmetric-key based applications.</p>
+<p>In this work we put forward the first formal treatment for threshold authenticated encryption. We propose a generic construction of threshold authenticated encryption based on any distributed pseudorandom function (DPRF). Instantiating with two concrete DPRF schemes we obtain two efficient constructions with different qualities. Our most efficient instantiation only uses symmetric-key primitives and achieves a throughput of up to 1 million encryptions/decryptions per seconds, or alternatively a sub-millisecond latency with up to 18 participating parties. </p>
+<p>In this talk I will first discuss the new notions, and the subtleties that arise in the distributed setting. Then I will be describing our constructions in detail. I will be concluding with a comparative analysis of our concrete instantiations.</p>
+<p>Joint work with Shashank Agrawal (Visa Research), Payman Mohassel (Visa Research) and Peter Rindal (Oregon State).</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+								<tr class="title-row">
+									<td width="10%">16:30&ndash;17:00</td>
+									<td width="15%">
+										
+											<a href="https://www.henrycg.com/" target="_blank">Henry Corrigan-Gibbs</a>
+										
+									</td>
+									<td>
+										
+												<a href="#/show-abstract" class="show-abstract" target="_blank">TBD</a>
+											
+										
+									</td>
+								</tr>
+							
+							<tr style="display:none" class="abstract-row">
+								<td width="10%"></td>
+								<td width="15%"></td>
+								<td class="abstract-cell">
+									<i>Abstract:</i>
+									<p>
+										<p>TBD</p>
+									
+									</p>
+								</td>
+							</tr>
+							
+
+						</table>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="event-heading">Additional Information</h2>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<p>
-						<p>Information about the program will be published soon.</p>
+							<p><strong>Location:</strong>
+TBD, Stanford University.</p>
+<p><strong>Parking information:</strong>
+TBD</p>
 
 						</p>
 					</div>
-			    </div>
-		    
+				</div>
+				
 				<div class="row">
 					<div class="col-md-12">
 					<br>
