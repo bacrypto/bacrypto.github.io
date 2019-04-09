@@ -88,7 +88,7 @@
 									</td>
 									<td>
 										
-												<a href="#/show-abstract" class="show-abstract" target="_blank">Private Communication without Synchronization</a>
+												<a href="#/show-abstract" class="show-abstract" target="_blank">Rendezvous: Private Communication without Synchronization</a>
 											
 										
 									</td>
@@ -100,7 +100,9 @@
 								<td class="abstract-cell">
 									<i>Abstract:</i>
 									<p>
-										<p>TBA</p>
+										<p>Rendezvous is a communication system that cryptographically protects metadata. Unlike all existing systems for metadata-hiding communication, Rendezvous does not require users to communicate in synchronous messaging rounds: Rendezvous provides meaningful metadata-hiding guarantees even if different users interact with the system at different rates. A Rendezvous deployment consists of a three-server cluster, and the system protects user privacy even if an active attacker controls one of the servers and any number of users.</p>
+<p>Every pair of Rendezvous users shares a secret virtual address that points to a unique mailbox stored at the servers. By cryptographically protecting accesses to virtual addresses, the honest servers prevent malicious servers and users from learning which mailbox has been updated when. By applying new cryptographic tools for detecting disruption attacks by malicious clients, Rendezvous reduces the bandwidth cost per message from O(√N) to O(logN) bits in an N-user deployment, which yields 4× and 8× overall performance improvements on the server and client sides, respectively, and reduces communication costs by one or more orders magnitude. Finally, we discuss how Rendezvous might apply in practice to protect communication between journalists and sources.</p>
+<p>This is joint work with Henry Corrigan-Gibbs, Matei Zharia, and Dan Boneh.</p>
 									
 									</p>
 								</td>
